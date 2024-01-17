@@ -1,0 +1,55 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+#crazy-deals-container{
+    /* border: 1px solid red; */
+    width: 75%;
+    margin: auto;
+}
+#crazy-deals-container>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+#crazy-deals-container>div>.crazy-deals-margin-left{
+    /* border: 1px solid red; */
+    margin-left: 100px;
+    line-height: 30px;
+    font-size: 20px;
+}
+#crazy-deals-container>div>.crazy-deals-margin-right{
+    margin-right: 100px;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: right;
+}
+#crazy-deals-container button{
+    padding:15px 80px;
+    color: white;
+    background-color: black;
+    border:none;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+#crazy-deals-container button:hover{
+    cursor: pointer;
+    animation: bgTransparent 1s ease-in 1 forwards;
+}
+
+
+@keyframes bgTransparent {
+    0%{
+        /* opacity: 3; */
+        background: rgb(0 0 0/ 1);
+    }
+    50%{
+        /* opacity: 1; */
+        background: rgb(0 0 0/ 0.7);
+    }
+    100%{
+        /* opacity: 2; */
+        background: rgb(0 0 0/ 1);
+    }
+}
