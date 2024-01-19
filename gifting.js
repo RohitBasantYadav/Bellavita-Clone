@@ -116,7 +116,7 @@ let arrData = [
     },
     {
         imageUrl: "https://bellavitaorganic.com/cdn/shop/files/It_s-your-choice-combo.jpg?v=1693931122&width=300",
-        title: "",
+        title: "UNISEX GIFT SET",
         name: "It'S Your Choice Combo",
         rating: 4.5,
         price: 1449.00,
