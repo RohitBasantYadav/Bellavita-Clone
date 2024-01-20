@@ -251,6 +251,7 @@ arrData.forEach(function(el){
     btn.innerText = "ADD TO CART";
     btn.addEventListener("click",function(){
         alert("Added to cart");
+        addToCart(el);
     })  
 
     ratingDiv.append(ratingP,p2)
@@ -279,5 +280,10 @@ function showProduct(el){
     window.location.href = "./showProduct.html";
 }
 
-
+function addToCart(el){
+    // console.log(el);
+    let cartArr = JSON.parse(localStorage.getItem("cartItems")) || [];
+    cartArr.push(el);
+    localStorage.setItem("cartItems",JSON.stringify(cartArr));
+}
 // console.log(newArr)

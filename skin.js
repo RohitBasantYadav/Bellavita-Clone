@@ -225,6 +225,11 @@ arrData.forEach(function(el){
     let productDiv = document.createElement("div");
     let img = document.createElement("img")
     img.src=el.imageUrl;
+    img.style.cursor = "pointer";
+    img.addEventListener("click",function(){
+        showProduct(el);
+        // console.log(el);
+    })
     let p1 = document.createElement("p")
     p1.innerText = el.title
     let h4 = document.createElement("h4");
@@ -246,6 +251,7 @@ arrData.forEach(function(el){
     btn.innerText = "ADD TO CART";
     btn.addEventListener("click",function(){
         alert("Added to cart");
+        addToCart(el);
     })  
 
     ratingDiv.append(ratingP,p2)
@@ -269,6 +275,15 @@ select.addEventListener("change",function(){
     appendData(arrData);
 })
 
+function showProduct(el){
+    localStorage.setItem("showProduct",JSON.stringify(el));
+    window.location.href = "./showProduct.html";
+}
 
-
+function addToCart(el){
+    // console.log(el);
+    let cartArr = JSON.parse(localStorage.getItem("cartItems")) || [];
+    cartArr.push(el);
+    localStorage.setItem("cartItems",JSON.stringify(cartArr));
+}
 // console.log(newArr)

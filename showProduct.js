@@ -61,6 +61,7 @@ let btn = document.createElement("button");
 btn.innerText = "ADD TO CART";
 btn.addEventListener("click",function(){
     alert("Added to Cart")
+    addToCart(el);
 })
 let svgDiv = document.createElement("div");
 svgDiv.setAttribute("id","svg")
@@ -87,3 +88,10 @@ svgArr.forEach(function(el){
 ratingDiv.append(ratingP, p2)
 imgDiv.append(img)
 detailDiv.append(h2,p1,ratingDiv,p3,p4,btn,svgDiv,para)
+
+function addToCart(el){
+    // console.log(el);
+    let cartArr = JSON.parse(localStorage.getItem("cartItems")) || [];
+    cartArr.push(el);
+    localStorage.setItem("cartItems",JSON.stringify(cartArr));
+}
