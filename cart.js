@@ -4,6 +4,7 @@ let h2 = document.querySelector("h2");
 let chekoutBtn = document.querySelector("#checkoutBtn");
 chekoutBtn.addEventListener("click",function(){
     alert("checkout")
+    
 })
 
 // console.log(cartArr);
