@@ -225,6 +225,10 @@ arrData.forEach(function(el){
     let productDiv = document.createElement("div");
     let img = document.createElement("img")
     img.src=el.imageUrl;
+    img.addEventListener("click",function(){
+        showProduct(el);
+        // console.log(el);
+    })
     let p1 = document.createElement("p")
     p1.innerText = el.title
     let h4 = document.createElement("h4");
@@ -270,5 +274,9 @@ select.addEventListener("change",function(){
 })
 
 
+function showProduct(el){
+    localStorage.setItem("showProduct",JSON.stringify(el));
+    window.location.href = "./showProduct.html";
+}
 
 // console.log(newArr)
