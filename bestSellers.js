@@ -225,6 +225,7 @@ arrData.forEach(function(el){
     let productDiv = document.createElement("div");
     let img = document.createElement("img")
     img.src=el.imageUrl;
+    img.style.cursor = "pointer";
     img.addEventListener("click",function(){
         showProduct(el);
         // console.log(el);
