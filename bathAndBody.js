@@ -1,3 +1,17 @@
+let loginBtn = document.querySelector("#login");
+console.log(loginBtn);
+let isAuth = localStorage.getItem("isAuth") || "Not Authenticated";
+
+if(isAuth !== "Authenticated"){
+    window.location.href ="./login.html";
+}else{
+    loginBtn.innerText = "Logout";
+    loginBtn.addEventListener("click",function(){
+        localStorage.setItem("isAuth", "Not Authenticated");
+        window.location.reload();
+    })
+}
+
 let arrData = [
     {
         imageUrl: "https://bellavitaorganic.com/cdn/shop/files/Dategiftset-01.jpg?v=1705563221&width=250",

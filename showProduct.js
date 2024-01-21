@@ -1,3 +1,17 @@
+let loginBtn = document.querySelector("#login");
+// console.log(loginBtn);
+let isAuth = localStorage.getItem("isAuth") || "Not Authenticated";
+
+if(isAuth !== "Authenticated"){
+    window.location.href ="./login.html";
+}else{
+    loginBtn.innerText = "Logout";
+    loginBtn.addEventListener("click",function(){
+        localStorage.setItem("isAuth", "Not Authenticated");
+        window.location.reload();
+    })
+}
+
 let svgArr = [
     {
         imageUrl:"https://bellavitaorganic.com/cdn/shop/files/Long_Lasting_1_70a277fc-8142-4cfb-b036-fc4084c6cee5.svg?crop=center&height=40&v=1694673851&width=40",
@@ -61,7 +75,7 @@ let btn = document.createElement("button");
 btn.innerText = "ADD TO CART";
 btn.addEventListener("click",function(){
     alert("Added to Cart")
-    addToCart(el);
+    addToCart(product);
 })
 let svgDiv = document.createElement("div");
 svgDiv.setAttribute("id","svg")

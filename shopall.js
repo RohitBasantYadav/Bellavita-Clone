@@ -1,3 +1,17 @@
+let loginBtn = document.querySelector("#login");
+console.log(loginBtn);
+let isAuth = localStorage.getItem("isAuth") || "Not Authenticated";
+
+if(isAuth !== "Authenticated"){
+    window.location.href ="./login.html";
+}else{
+    loginBtn.innerText = "Logout";
+    loginBtn.addEventListener("click",function(){
+        localStorage.setItem("isAuth", "Not Authenticated");
+        window.location.reload();
+    })
+}
+
 let arrData = [
     {
         imageUrl: "https://bellavitaorganic.com/cdn/shop/files/0_6326984c-e89a-43ba-b560-e35d40faba70.jpg?v=1703835295&width=250",

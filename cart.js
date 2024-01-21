@@ -1,5 +1,19 @@
 let container = document.querySelector("#cart-container");
+let loginBtn = document.querySelector("#login");
+console.log(loginBtn);
 let cartArr = JSON.parse(localStorage.getItem("cartItems")) || [];
+let isAuth = localStorage.getItem("isAuth") || "Not Authenticated";
+
+if(isAuth !== "Authenticated"){
+    window.location.href ="./login.html";
+}else{
+    loginBtn.innerText = "Logout";
+    loginBtn.addEventListener("click",function(){
+        localStorage.setItem("isAuth", "Not Authenticated");
+        window.location.reload();
+    })
+}
+
 let h2 = document.querySelector("h2");
 let chekoutBtn = document.querySelector("#checkoutBtn");
 chekoutBtn.addEventListener("click",function(){
