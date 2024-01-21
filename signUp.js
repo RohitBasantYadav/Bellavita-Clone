@@ -12,4 +12,6 @@ form.addEventListener("submit",function(event){
         password: password.value,
     }
     localStorage.setItem("userDetail",JSON.stringify(userDetail));
+    alert("Account Created");
+    window.location.reload();
 })
