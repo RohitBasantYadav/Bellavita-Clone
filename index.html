@@ -303,8 +303,10 @@
         </div>
     </nav>
     <div id="header">
+        <a href="./shopall.html">
         <img src="https://bellavitaorganic.com/cdn/shop/files/1920_x_720_2f7de478-ad9a-4e44-9444-1c5f5558118c.jpg?v=1704887849&width=1920"
             alt="Header Image">
+        </a>
     </div>
 
     <div id="products">
@@ -418,10 +420,10 @@
         </div>
 
 
-        <a id="checkoutLink" href="#">Go to Checkout</a>
+        <!-- <a id="checkoutLink" href="#">Go to Checkout</a> -->
 
 
-        <div id="checkoutModal" style="display: none;">
+        <!-- <div id="checkoutModal" style="display: none;">
             <div id="checkoutForm">
                 <h2>Checkout</h2>
                 <label for="firstName">First Name:</label>
@@ -437,7 +439,7 @@
                 <input type="text" id="address" required>
 
                 <button onclick="submitOrder()">Submit Order</button>
-            </div>
+            </div> -->
         </div>
         <footer>
             <div class="customer-footer">
@@ -506,6 +508,11 @@
                     window.location.reload();
                 })
             }
+
+            let viewAllBtn = document.querySelector("#viewAllBtn");
+            viewAllBtn.addEventListener("click",function(){
+                window.location.href = "./bestSellers.html";
+            })
             const cart = [];
 
 
@@ -516,29 +523,29 @@
             }
 
 
-            function openCheckoutModal() {
-                document.getElementById('checkoutModal').style.display = 'block';
-            }
+            // function openCheckoutModal() {
+            //     document.getElementById('checkoutModal').style.display = 'block';
+            // }
 
 
-            function closeCheckoutModal() {
-                document.getElementById('checkoutModal').style.display = 'none';
-            }
+            // function closeCheckoutModal() {
+            //     document.getElementById('checkoutModal').style.display = 'none';
+            // }
 
-            function submitOrder() {
-                alert('Order submitted successfully!');
-                closeCheckoutModal();
-            }
+            // function submitOrder() {
+            //     alert('Order submitted successfully!');
+            //     closeCheckoutModal();
+            // }
 
-            document.getElementById('checkoutLink').addEventListener('click', openCheckoutModal);
+            // document.getElementById('checkoutLink').addEventListener('click', openCheckoutModal);
 
-            const addToCartButtons = document.querySelectorAll('.add-to-cart');
-            addToCartButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    const productName = button.parentNode.querySelector('h3').innerText;
-                    addToCart(productName);
-                });
-            });
+            // const addToCartButtons = document.querySelectorAll('.add-to-cart');
+            // addToCartButtons.forEach(button => {
+            //     button.addEventListener('click', () => {
+            //         const productName = button.parentNode.querySelector('h3').innerText;
+            //         addToCart(productName);
+            //     });
+            // });
 
             // function addToCart(el) {
             //     // console.log(el);
@@ -550,3 +557,4 @@
 </body>
 
 </html>
+<script src="./navbar.js"></script>

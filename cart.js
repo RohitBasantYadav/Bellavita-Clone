@@ -1,7 +1,8 @@
 let container = document.querySelector("#cart-container");
+let cartArr = JSON.parse(localStorage.getItem("cartItems")) || [];
 let loginBtn = document.querySelector("#login");
 console.log(loginBtn);
-let cartArr = JSON.parse(localStorage.getItem("cartItems")) || [];
+
 let isAuth = localStorage.getItem("isAuth") || "Not Authenticated";
 
 if(isAuth !== "Authenticated"){
@@ -17,9 +18,13 @@ if(isAuth !== "Authenticated"){
 let h2 = document.querySelector("h2");
 let chekoutBtn = document.querySelector("#checkoutBtn");
 chekoutBtn.addEventListener("click",function(){
-    alert("checkout")
-    
+    window.location.href = "./checkOut.html";
 })
+
+//Aparna code 
+
+
+//Aparna code end
 
 // console.log(cartArr);
 cartTotal(cartArr)

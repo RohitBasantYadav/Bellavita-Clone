@@ -16,6 +16,8 @@ h1{
 }
 #checkoutBtn{
     width: 20%;
+    /* border: 1px solid red; */
+    /* height: 100%; */
 }
 #cart-container{
     /* border: 1px solid green; */
@@ -79,4 +81,9 @@ button:hover {
         /* opacity: 2; */
         background: rgb(0 0 0/ 1);
     }
+}
+
+#amount{
+    border: 1px solid green;
+    /* display: flex; */
 }
