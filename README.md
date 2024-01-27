@@ -4,9 +4,7 @@
 
 ## [Link to Bellavita clone](https://quantum-nexus-team.netlify.app/)
 
-
-Hello Everyone, my name is *Rohit Yadav*. And this is my project which was given to us in our construct week, were we have to clone a website called **Bellavita** using **HTML, CSS, JavaScript, DOM and LocalStorage**.
-There were four members in our team including me:
+"Hello everyone, my name is *Rohit Yadav*. This is our project assigned during Construct Week, where we were tasked with cloning a website called **Bellavita** using **HTML, CSS, JavaScript, DOM, and LocalStorage**. Our team consisted of four members, including myself."
 ## Team Members
 
 1. [Rohit Yadav](#) - My task was to create some of the Product pages, Cart page, and Login/SignUp page and adding some functionality and authentication to it.
