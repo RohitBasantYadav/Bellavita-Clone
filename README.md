@@ -13,16 +13,19 @@ There were four members in our team including me:
 ## Screenshots
 
 ### Homepage
-![Homepage]()
+![Homepage](Home.png)
 
 ### Product Page
-![Product Page](url_to_product_page_image)
+![Product Page](product.png)
 
 ### Signup Page
-![Signup Page](url_to_signup_page_image)
+![Signup Page](signup.png)
 
 ### Login Page
-![Login Page](url_to_login_page_image)
+![Login Page](login.png)
+
+### Cart Page
+![Cart Page](login.png)
 
 ## Acknowledgments
 
