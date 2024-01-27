@@ -13,7 +13,7 @@ There were four members in our team including me:
 ## Screenshots
 
 ### Homepage
-![Homepage](url_to_homepage_image)
+![Homepage]()
 
 ### Product Page
 ![Product Page](url_to_product_page_image)
@@ -23,26 +23,6 @@ There were four members in our team including me:
 
 ### Login Page
 ![Login Page](url_to_login_page_image)
-
-## Project Overview
-
-Provide a brief overview of your project, its goals, and any important information.
-
-## Installation
-
-Include instructions on how to install and run your project. You can also mention any dependencies.
-
-## Usage
-
-Explain how to use your project, including any specific features or functionalities.
-
-## Contributing
-
-If you want to contribute to the project, provide guidelines for how others can contribute.
-
-## License
-
-Specify the license for your project.
 
 ## Acknowledgments
 
